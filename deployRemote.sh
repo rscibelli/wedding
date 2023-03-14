@@ -1,4 +1,6 @@
-sshpass -p ****** ssh pi@24.60.191.54 << EOF
+export $( grep -vE "^(#.*|\s*)$" .env )
+
+sshpass -p ${ssh_pass} ssh pi@24.60.191.54 << EOF
     docker stop wedding
     docker rm wedding
     docker rmi wedding-build
