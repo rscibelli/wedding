@@ -1,4 +1,4 @@
-sshpass -p pi ssh pi@10.0.0.251 << EOF
+sshpass -p ****** ssh pi@10.0.0.251 << EOF
     docker stop wedding
     docker rm wedding
     docker rmi wedding-build
