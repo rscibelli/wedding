@@ -1,16 +1,24 @@
-
-.carousel .thumbs-wrapper {
-    margin: 1px;
+.pictureAndNames {
+    width: 100%;
+    position: relative;
 }
 
-.thumbs.animated {
-    padding: 0px;
-    margin: 5px;
+.names {
+    float: left;
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    z-index: 1000;
+}
+
+.beach {
+    width: 100%;
 }
 
 .secondBoxItem {
     margin: 10px;
     font-family: 'Dancing Script';
+    color: rgb(48, 48, 48);
 }
 
 .thirdBox {
@@ -23,7 +31,8 @@
     flex: 1;
     margin: 10px;
     font-family: 'Dancing Script';
-    font-size: 48px;
+    font-size: 45px;
+    color: rgb(48, 48, 48);
 }
 
 .andSymbol {
@@ -32,10 +41,11 @@
     font-family: 'Dancing Script';
     font-weight: 300;
     font-size: 78px;
+    color: rgb(48, 48, 48);
 }
 
 .venue {
-    background-color: #f0e581;
+    background-color: #ede6a6;
     padding: 20px;
 }
 
@@ -54,6 +64,67 @@
     font-family: 'Edu NSW ACT Foundation';
     font-size: 25px;
     font-weight: 500;
+}
+
+.hotel {
+    display: flex;
+    font-family: 'Montserrat';
+    background-color: rgb(221, 221, 221);
+}
+
+.usAtBridge {
+    display: flex;
+    flex: 1;
+    width: 100px;
+}
+
+.hotelItem {
+    flex: 2;
+    padding: 20px;
+}
+
+.transportation {
+    display: flex;
+    font-family: 'Montserrat';
+    background-color: #aad7df;
+}
+
+.transpItem {
+    flex: 2;
+    padding: 20px;
+}
+
+.river {
+    flex: 2;
+    width: 100px;
+}
+
+.party {
+    display: flex;
+    background-color: rgb(221, 221, 221);
+}
+
+.josh {
+    flex: 1;
+    width: 100px;
+}
+
+.partyItem {
+    flex: 2;
+    font-family: 'Montserrat';
+    padding: 20px;
+}
+
+.food {
+    display: flex;
+    background-color: #ede6a6;
+    height: 100px;
+}
+
+.foodItem {
+    flex: 1;
+    font-family: 'Montserrat';
+    padding: 20px;
 }
 
 .song {

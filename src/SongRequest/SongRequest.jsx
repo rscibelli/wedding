@@ -20,7 +20,7 @@ export default function SongRequest({modalState, toggleModal}) {
       );
 
     return (
-        <Modal open={modalState} onClose={toggleModal}>
+        <Modal class="theModal" open={modalState} onClose={toggleModal}>
             <Box class="theBox">
                 <Card variant="outlined">{cardContent}</Card>
             </Box>
