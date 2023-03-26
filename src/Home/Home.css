@@ -1,0 +1,43 @@
+.names {
+    margin: 10px;
+}
+
+.secondBoxItem {
+    margin: 10px;
+    font-family: 'Dancing Script';
+}
+
+.thirdBox {
+    display: flex;
+    width: 100%;
+} 
+
+.thirdBoxItem {
+    flex: 1;
+    margin: 10px;
+    font-family: 'Dancing Script';
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.venue {
+    background-color: #f0e581;
+    padding: 10px;
+}
+
+.atSymbol {
+    font-family: 'Dancing Script';
+    font-size: 20px;
+}
+
+.bloom {
+    font-family: 'Edu NSW ACT Foundation';
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.address {
+    font-family: 'Edu NSW ACT Foundation';
+    font-size: 25px;
+    font-weight: 500;
+}
