@@ -7,24 +7,30 @@ import maddieAtSpot from '../Pictures/maddieAtSpotMod.jpg'
 import beach from '../Pictures/beachMod.jpg'
 import faceMod from '../Pictures/maddieFaceMod.jpg'
 import Footer from '../Footer/Footer.jsx';
+import Button from '@mui/material/Button';
+import SongRequest from '../SongRequest/SongRequest';
 
 export default function Home() {
+  const [modal, setModal] = React.useState(false);
+
+  const toggleModal = () => {
+    setModal(!modal)
+  }
 
   return (
     <div>
-      {/* 5000x1471 */}
       <Carousel autoPlay>
         <div>
-          <img width="100%" src={meNmaddie} alt="meNmaddie" />
+          <img src={meNmaddie} alt="meNmaddie" />
         </div>
         <div>
-          <img width="100%" src={beach} alt="beach" />
+          <img src={beach} alt="beach" />
         </div>
         <div>
-          <img width="100%" src={maddieAtSpot} alt="maddieAtSpot" />
+          <img src={maddieAtSpot} alt="maddieAtSpot" />
         </div>
         <div>
-          <img width="100%" src={faceMod} alt="faceMod" />
+          <img src={faceMod} alt="faceMod" />
         </div>
       </Carousel>
       <div class="names">
@@ -32,9 +38,15 @@ export default function Home() {
           <div class="secondBoxItem">Please Join us in Celebraing...</div>
         </div>
         <div class="thirdBox">
-          <div class="thirdBoxItem">Madeline Murphy</div>
-          <div class="thirdBoxItem">&</div>
-          <div class="thirdBoxItem">Robert Scibelli</div>
+          <div class="thirdBoxItem">
+            <div>Madeline</div>
+            <div>Murphy</div>
+          </div>
+          <div class="andSymbol">&</div>
+          <div class="thirdBoxItem">
+            <div>Robert</div>
+            <div>Scibelli</div>
+          </div>
         </div>
       </div>
       <div class="venue">
@@ -42,6 +54,11 @@ export default function Home() {
         <div class="bloom">Bloom Meadows</div>
         <div class="address">2422 Hancock Rd</div>
         <div class="address">Williamstown, MA 01267</div>
+      </div>
+      <div class="song">
+        <div class="song-text">Got a song you'd like to reqeust?</div>
+        <Button variant="contained" onClick={toggleModal}>Request a Song!</Button>
+        <SongRequest modalState={modal} toggleModal={toggleModal}/>
       </div>
       <Footer />
     </div>
