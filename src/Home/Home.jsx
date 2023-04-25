@@ -1,45 +1,57 @@
 import React from 'react';
-import "./Home.css"
-import Carousel from '../Carousel/Carousel.jsx';
-import beach from '../Pictures/beach.jpg'
+import "./Home.css";
+// import 'bootswatch/dist/minty/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import Carousel from '../Carousel/Carousel.jsx';
+import beach from '../Pictures/beach-dark.jpg'
 import usAtBridge from '../Pictures/usAtBridge.jpg'
 import river from '../Pictures/river.jpg'
 import josh from '../Pictures/josh.jpg'
 import Footer from '../Footer/Footer.jsx';
-import Button from '@mui/material/Button';
 import SongRequest from '../SongRequest/SongRequest';
 
 export default function Home() {
-  const [modal, setModal] = React.useState(false);
-
-  const toggleModal = () => {
-    setModal(!modal)
-  }
 
   return (
     <div>
-      <div className='pictureAndNames'>
-        {/* <Carousel /> */}
-        <img className='beach' src={beach} alt="beach" />
-        <div className="names">
-          <div className="secondBox">
-            <div className="secondBoxItem">Please Join Us In Celebrating</div>
-          </div>
-          <div className="thirdBox">
-            <div className="thirdBoxItem">
-              <div>Madeline</div>
-              <div>Murphy</div>
+      {/* <header style={{ paddingLeft: 0 }}>
+        <div
+          className='text-center bg-image hero'
+        >
+          <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
+            <div className='d-flex justify-content-center align-items-center'>
+              <div className='text-white'>
+                <h1 className='mb-3 lead'>Heading</h1>
+                <h4 className='mb-3'>Subheading</h4>
+                <a className='btn btn-outline-light btn-lg' href='#!' role='button'>
+                  Call to action
+                </a>
+              </div>
             </div>
-            <div className="andSymbol">&</div>
-            <div className="thirdBoxItem">
-              <div>Robert</div>
-              <div>Scibelli</div>
+          </div>
+        </div>
+      </header> */}
+
+      <div className='pictureAndNames'>
+        <img className='beach' src={beach} alt="beach" />
+        <div className="mask">
+          <div className="names">
+            <div >
+              <div className="maddie">
+                <div>Madeline Muprhy</div>
+                {/* <div>Murphy</div> */}
+              </div>
+              <div className="rob">
+                <div>Robert Scibelli</div>
+                {/* <div>Scibelli</div> */}
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div className="venue">
+        <div className="date">August 3rd 2024</div>
         <div className="atSymbol">at</div>
         <div className="bloom">Bloom Meadows</div>
         <div className="address">2422 Hancock Rd</div>
@@ -66,9 +78,8 @@ export default function Home() {
       </div>
 
       <div className="song">
-        <div className="song-text">Got a song you'd like to reqeust?</div>
-        <Button variant="contained" onClick={toggleModal}>Request a Song!</Button>
-        <SongRequest modalState={modal} toggleModal={toggleModal}/>
+        <div className="lead">Got a song you'd like to reqeust?</div>
+        <SongRequest/>
       </div>
       <Footer />
     </div>

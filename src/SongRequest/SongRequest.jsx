@@ -1,29 +1,36 @@
-import * as React from 'react';
-import Modal from '@mui/material/Modal';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
-import Box from '@mui/material/Box';
+import React, { useState } from 'react';
+import 'bootswatch/dist/minty/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
-export default function SongRequest({modalState, toggleModal}) {
+export default function SongRequest() {
+    const [show, setShow] = useState(false);
 
-    const cardContent = (
-        <React.Fragment>
-          <CardContent>
-            Rob
-          </CardContent>
-          <CardActions>
-            <Button size="small">Submit</Button>
-          </CardActions>
-        </React.Fragment>
-      );
+    const toggleShow = () => setShow(!show);
 
     return (
-        <Modal class="theModal" open={modalState} onClose={toggleModal}>
-            <Box class="theBox">
-                <Card variant="outlined">{cardContent}</Card>
-            </Box>
+      <div>
+
+        <Button variant="primary" onClick={toggleShow}>
+          Launch demo modal
+        </Button>
+
+        <Modal show={show} onHide={toggleShow}>
+          <Modal.Header closeButton>
+            <Modal.Title>Modal heading</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={toggleShow}>
+              Close
+            </Button>
+            <Button variant="primary" onClick={toggleShow}>
+              Save Changes
+            </Button>
+          </Modal.Footer>
         </Modal>
+
+      </div>
     );
 }

@@ -7,7 +7,7 @@ function App() {
   useEffect(() => {
     WebFont.load({
       google: {
-        families: ['Edu NSW ACT Foundation', 'Dancing Script', 'Montserrat']
+        families: ['Edu NSW ACT Foundation', 'Dancing Script', 'Montserrat', 'Sacramento', 'Amatic SC']
       }
     });
    }, []);

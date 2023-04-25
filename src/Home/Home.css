@@ -1,7 +1,25 @@
 .pictureAndNames {
     width: 100%;
     position: relative;
+    overflow: auto;
 }
+
+.beach {
+    width: 100%;
+}
+
+.hero {
+    background-image: url("../Pictures/beach.jpg");
+}
+
+/* .mask {
+    float: left;
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    z-index: 1000;
+    background-color: 'rgba(0, 0, 0, 0.6)';
+} */
 
 .names {
     float: left;
@@ -9,16 +27,22 @@
     position: absolute;
     top: 10px;
     z-index: 1000;
+    font-family: 'Amatic SC';
+    font-size: 40px;
+    color: rgb(226, 226, 226);
+    padding-top: 30px;
 }
 
-.beach {
-    width: 100%;
+.names-row {
+    display: flex;
 }
 
-.secondBoxItem {
-    margin: 10px;
-    font-family: 'Dancing Script';
-    color: rgb(48, 48, 48);
+.maddie {
+    flex: 1;
+}
+
+.rob {
+    flex: 1;
 }
 
 .thirdBox {
@@ -30,40 +54,29 @@
 .thirdBoxItem {
     flex: 1;
     margin: 10px;
-    font-family: 'Dancing Script';
     font-size: 45px;
-    color: rgb(48, 48, 48);
-}
-
-.andSymbol {
-    flex: 1;
-    margin: 10px;
-    font-family: 'Dancing Script';
-    font-weight: 300;
-    font-size: 78px;
-    color: rgb(48, 48, 48);
 }
 
 .venue {
+    font-family: 'Sacramento';
     background-color: #ede6a6;
-    padding: 20px;
+    padding: 30px;
+}
+
+.date {
+    font-size: 35px;
+}
+
+.address {
+    font-size: 25px;
 }
 
 .atSymbol {
-    font-family: 'Dancing Script';
     font-size: 20px;
 }
 
 .bloom {
-    font-family: 'Edu NSW ACT Foundation';
     font-size: 48px;
-    font-weight: 500;
-}
-
-.address {
-    font-family: 'Edu NSW ACT Foundation';
-    font-size: 25px;
-    font-weight: 500;
 }
 
 .hotel {
@@ -134,6 +147,5 @@
 }
 
 .song-text {
-    font-family: 'Montserrat';
     padding: 10px;
 }
