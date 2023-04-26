@@ -1,10 +1,14 @@
 import React from 'react';
 import "./Home.css";
-// import 'bootswatch/dist/minty/bootstrap.min.css';
+import 'bootswatch/dist/minty/bootstrap.min.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import Carousel from '../Carousel/Carousel.jsx';
 import beach from '../Pictures/beach-dark.jpg'
-import usAtBridge from '../Pictures/usAtBridge.jpg'
+// import usAtBridge from '../Pictures/usAtBridge.jpg'
+import bloom from '../Pictures/bloom.jpeg';
+import sim from '../Pictures/sim.jpg';
+import indie1 from '../Pictures/indie.jpg';
+import indie2 from '../Pictures/indiebox.jpg';
 import river from '../Pictures/river.jpg'
 import josh from '../Pictures/josh.jpg'
 import Footer from '../Footer/Footer.jsx';
@@ -33,7 +37,7 @@ export default function Home() {
       </header> */}
 
       <div className='pictureAndNames'>
-        <img className='beach' src={beach} alt="beach" />
+        <img className='beach rounded' src={beach} alt="beach" />
         <div className="mask">
           <div className="names">
             <div >
@@ -51,16 +55,51 @@ export default function Home() {
       </div>
 
       <div className="venue">
-        <div className="date">August 3rd 2024</div>
-        <div className="atSymbol">at</div>
-        <div className="bloom">Bloom Meadows</div>
+        <h3 className='married-tag pt-4 pb-3'>Join Us In Celebrating</h3>
+        <p><small>the wedding between Madeline Murphy and Robert Scibelli</small></p>
+
+        <div className="married-tag pb-2 pt-4">August 3rd 2024</div>
+        <p><small>at</small></p>
+        <div className="married-tag pb-2">Bloom Meadows</div>
         <div className="address">2422 Hancock Rd</div>
         <div className="address">Williamstown, MA 01267</div>
       </div>
 
+      <div className='pb-2'>
+        <div className='row py-5'>
+          <div className='col'>
+            <img
+              src={indie1}
+              class="w-75 rounded"
+              alt="Boat on Calm Water"
+            />
+          </div>
+          <div className='col'>
+            <img
+              src={sim}
+              class="w-75 rounded"
+              alt="Boat on Calm Water"
+            />
+          </div>
+          <div className='col'>
+            <img
+              src={indie2}
+              class="w-75 rounded"
+              alt="Boat on Calm Water"
+            />
+          </div>
+        </div>
+      </div>
+
       <div className='hotel'>
-        <img className='usAtBridge' src={usAtBridge} alt="usAtBridge" />
-        <div className='hotelItem'>Hotels</div>
+        <img className='bloom-pic rounded' src={bloom} alt="usAtBridge" />
+        <div className='hotel-text'>
+          <p className='lead'>Events</p>
+          <p>Ceramony 3:30</p>
+          <p>Cocktail hour 4</p>
+          <p>Announcements + Speeches 5</p>
+          <p>Reception to follow</p>
+        </div>
       </div>
 
       <div className='transportation'>

@@ -45,53 +45,49 @@
     flex: 1;
 }
 
-.thirdBox {
-    display: flex;
-    width: 100%;
-    padding-bottom: 20px;
-} 
-
-.thirdBoxItem {
-    flex: 1;
-    margin: 10px;
-    font-size: 45px;
+.married-tag {
+    color: #3d4351;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 29px;
 }
 
 .venue {
-    font-family: 'Sacramento';
-    background-color: #ede6a6;
-    padding: 30px;
+    /* font-family: 'Castoro Titling'; */
+    /* background-color: #cce8e0;; */
+    padding: 20px;
 }
 
 .date {
-    font-size: 35px;
-}
-
-.address {
     font-size: 25px;
 }
 
+.address {
+    font-size: 15px;
+}
+
 .atSymbol {
-    font-size: 20px;
+    font-size: 10px;
 }
 
 .bloom {
-    font-size: 48px;
+    font-size: 38px;
 }
 
 .hotel {
     display: flex;
-    font-family: 'Montserrat';
     background-color: rgb(221, 221, 221);
 }
 
-.usAtBridge {
+.bloom-pic {
     display: flex;
     flex: 1;
     width: 100px;
+    height: 100%;
 }
 
-.hotelItem {
+.hotel-text {
     flex: 2;
     padding: 20px;
 }
@@ -99,7 +95,7 @@
 .transportation {
     display: flex;
     font-family: 'Montserrat';
-    background-color: #aad7df;
+    background-color: #ffced1;;
 }
 
 .transpItem {
