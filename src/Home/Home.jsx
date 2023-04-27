@@ -52,19 +52,31 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="venue">
-        <h3 className='married-tag pt-4 pb-3'>Join Us In Celebrating</h3>
+      <div className="pt-5">
+        <h3 className='married-tag py-2'>Let's Celebrate!</h3>
         <p><small>the wedding between Madeline Murphy and Robert Scibelli</small></p>
 
-        <div className="married-tag pb-2 pt-4">August 3rd 2024</div>
-        <p><small>at</small></p>
-        <div className="married-tag pb-2">Bloom Meadows</div>
-        <div className="address">2422 Hancock Rd</div>
-        <div className="address">Williamstown, MA 01267</div>
+        <div className='row py-5'>
+          <div className='col text-end'>
+            <h3>Bloom Meadows</h3>
+            <p className='lead'>2422 Hancock Rd</p>
+            <p className='lead'>Williamstown, MA 01267</p>
+          </div>
+          <div className='col-1 my-auto'>
+            <div>
+              <h3>&#x2022;</h3>
+            </div>
+          </div>
+          <div className='col text-start'>
+            <h3>August 3rd 2024</h3>
+            <p className='lead'>at</p>
+            <p className='lead'>3:30 pm</p>
+          </div>
+        </div>
       </div>
 
       <div>
-        <div className='row py-5'>
+        <div className='row py-4'>
           <div className='col my-auto'>
             <img
               src={indie1}
@@ -89,57 +101,52 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='pb-2'>
-        <div className='row py-5'>
-          <div className='col'>
-            <div className="jumbotron text-end">
-              <h1 className="display-6">3:30 pm</h1>
-              <p className="lead">Ceremony</p>
-            </div>
+      <div className='py-4'>
+        <h3 className='pb-3'>Hotel</h3>
+        <p>A room block has been reserved at The Fairfield Inn & Suits in Williamstown</p>
+
+        <h3><span class="badge rounded-pill text-bg-secondary">Aug 3rd - 4th</span></h3>
+
+        <div className='row pt-4'>
+          <div className='col my-auto text-end'>
+            <button type="button" class="btn btn-outline-primary">Reserve a Room</button>
           </div>
-          <div className='col-1 my-auto'>
-            <div>
-              <h3>&#x2022;</h3>
-            </div>
+          <div className='col-sm-1 my-auto'>
+            <div class="vr"></div>
           </div>
-          <div className='col'>
-            <div className="jumbotron text-start">
-              <h1 className="display-6">5:00 pm</h1>
-              <p className="lead">Reception</p>
-            </div>
+          <div className='col my-auto text-start'>
+            <h5>(413) 458-7333</h5>
           </div>
         </div>
       </div>
 
-      <div className="ratio ratio-21x9">
-        {/* <iframe src="https://www.google.com/maps/d/u/2/embed?mid=16m_ZP6B3S2ezBgmEYDmAKciiTIunyZc&ehbc=2E312F" width="640" height="300"></iframe>       */}
+      {/* <div className="ratio ratio-21x9">
+        <iframe src="https://www.google.com/maps/d/u/2/embed?mid=16m_ZP6B3S2ezBgmEYDmAKciiTIunyZc&ehbc=2E312F" width="640" height="300"></iframe>      
         <iframe title='venue-on-map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.89315990861!2d-73.28920042435702!3d42.6100874192696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e0ad8dc321d361%3A0x392a649d9754b318!2s2422%20Hancock%20Rd%2C%20Williamstown%2C%20MA%2001267!5e1!3m2!1sen!2sus!4v1682560243115!5m2!1sen!2sus" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+      </div> */}
 
-      {/* <div className='hotel'>
-        <img className='bloom-pic rounded' src={bloom} alt="usAtBridge" />
-        <div className='hotel-text'>
-          <p className='lead'>Events</p>
-          <p>Ceramony 3:30</p>
-          <p>Cocktail hour 4</p>
-          <p>Announcements + Speeches 5</p>
-          <p>Reception to follow</p>
+      <div className='row py-5'>
+        <div className='col'>
+          <div class="card w-75 p-3 mx-auto">
+            <div class="card-body">
+              <h3 class="card-title">Venue</h3>
+            </div>
+            <div class="ratio ratio-1x1">
+            <iframe title='venue' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.892443559123!2d-73.28921762435705!3d42.61010401926851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e0ad8defac5625%3A0xc2c30cfc50759499!2sBloom%20Meadows!5e1!3m2!1sen!2sus!4v1682634849680!5m2!1sen!2sus" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+        <div className='col'>
+          <div class="card w-75 p-3 mx-auto">
+            <div class="card-body">
+              <h3 class="card-title">Hotel</h3>
+            </div>
+            <div class="ratio ratio-1x1">
+              <iframe title='hotel' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9935.55392055457!2d-73.19441925632063!3d42.70528969526227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e0ba1b77400001%3A0x3ce3e33730fd548b!2sFairfield%20Inn%20%26%20Suites%20by%20Marriott%20Williamstown!5e1!3m2!1sen!2sus!4v1682634560503!5m2!1sen!2sus" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div className='transportation'>
-        <div className='transpItem'>Transportation</div>
-        <img className='river' src={river} alt="river" />
-      </div>
-
-      <div className='party'>
-        <img className='josh' src={josh} alt="josh" />
-        <div className='partyItem'>The Wedding party</div>
-      </div>
-
-      <div className='food'>
-        <div className='foodItem'>Food</div>
-      </div> */}
 
       <div className="py-4">
         <div className="lead pb-3">Got a song you'd like to reqeust?</div>

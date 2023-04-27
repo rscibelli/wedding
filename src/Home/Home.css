@@ -47,24 +47,14 @@
 
 .married-tag {
     color: #3d4351;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 700;
     letter-spacing: 3px;
     line-height: 29px;
 }
 
-.venue {
-    /* font-family: 'Castoro Titling'; */
-    /* background-color: #cce8e0;; */
-    padding: 20px;
-}
-
 .date {
     font-size: 25px;
-}
-
-.address {
-    font-size: 15px;
 }
 
 .atSymbol {
