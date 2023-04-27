@@ -63,7 +63,7 @@ export default function Home() {
         <div className="address">Williamstown, MA 01267</div>
       </div>
 
-      <div className='pb-2 w-100'>
+      <div>
         <div className='row py-5'>
           <div className='col my-auto'>
             <img
@@ -89,7 +89,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='pb-2 w-100'>
+      <div className='pb-2'>
         <div className='row py-5'>
           <div className='col'>
             <div className="jumbotron text-end">
@@ -97,14 +97,14 @@ export default function Home() {
               <p className="lead">Ceremony</p>
             </div>
           </div>
-          <div className='col my-auto'>
-            <div className="">
+          <div className='col-1 my-auto'>
+            <div>
               <h3>&#x2022;</h3>
             </div>
           </div>
           <div className='col'>
             <div className="jumbotron text-start">
-              <h1 className="display-6">6:00 pm</h1>
+              <h1 className="display-6">5:00 pm</h1>
               <p className="lead">Reception</p>
             </div>
           </div>

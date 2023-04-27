@@ -12,7 +12,7 @@ export default function SongRequest() {
     return (
       <div>
 
-        <Button variant="primary" onClick={toggleShow}>
+        <Button variant="btn btn-outline-primary" onClick={toggleShow}>
           Request a song!
         </Button>
 
