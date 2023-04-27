@@ -5,12 +5,12 @@ import 'bootswatch/dist/minty/bootstrap.min.css';
 // import Carousel from '../Carousel/Carousel.jsx';
 import beach from '../Pictures/beach-dark.jpg'
 // import usAtBridge from '../Pictures/usAtBridge.jpg'
-import bloom from '../Pictures/bloom.jpeg';
+// import bloom from '../Pictures/bloom.jpeg';
 import sim from '../Pictures/sim.jpg';
 import indie1 from '../Pictures/indie.jpg';
 import indie2 from '../Pictures/indiebox.jpg';
-import river from '../Pictures/river.jpg'
-import josh from '../Pictures/josh.jpg'
+// import river from '../Pictures/river.jpg'
+// import josh from '../Pictures/josh.jpg'
 import Footer from '../Footer/Footer.jsx';
 import SongRequest from '../SongRequest/SongRequest';
 
@@ -37,17 +37,15 @@ export default function Home() {
       </header> */}
 
       <div className='pictureAndNames'>
-        <img className='beach rounded' src={beach} alt="beach" />
+        <img className='beach' src={beach} alt="beach" />
         <div className="mask">
           <div className="names">
             <div >
               <div className="maddie">
                 <div>Madeline Muprhy</div>
-                {/* <div>Murphy</div> */}
               </div>
               <div className="rob">
                 <div>Robert Scibelli</div>
-                {/* <div>Scibelli</div> */}
               </div>
             </div>
           </div>
@@ -67,31 +65,58 @@ export default function Home() {
 
       <div className='pb-2'>
         <div className='row py-5'>
-          <div className='col'>
+          <div className='col my-auto'>
             <img
               src={indie1}
-              class="w-75 rounded"
+              className="w-75 rounded"
               alt="Boat on Calm Water"
             />
           </div>
-          <div className='col'>
+          <div className='col my-auto'>
             <img
               src={sim}
-              class="w-75 rounded"
+              className="w-75 rounded"
               alt="Boat on Calm Water"
             />
           </div>
-          <div className='col'>
+          <div className='col my-auto'>
             <img
               src={indie2}
-              class="w-75 rounded"
+              className="w-75 rounded"
               alt="Boat on Calm Water"
             />
           </div>
         </div>
       </div>
 
-      <div className='hotel'>
+      <div className='pb-2'>
+        <div className='row py-5'>
+          <div className='col'>
+            <div className="jumbotron text-end">
+              <h1 className="display-6">3:30 pm</h1>
+              <p className="lead">Ceremony</p>
+            </div>
+          </div>
+          <div className='col-md-auto my-auto'>
+            <div className="">
+              <h3>&#x2022;</h3>
+            </div>
+          </div>
+          <div className='col'>
+            <div className="jumbotron text-start">
+              <h1 className="display-6">6:00 pm</h1>
+              <p className="lead">Reception</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="ratio ratio-21x9">
+        {/* <iframe src="https://www.google.com/maps/d/u/2/embed?mid=16m_ZP6B3S2ezBgmEYDmAKciiTIunyZc&ehbc=2E312F" width="640" height="300"></iframe>       */}
+        <iframe title='venue-on-map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.89315990861!2d-73.28920042435702!3d42.6100874192696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e0ad8dc321d361%3A0x392a649d9754b318!2s2422%20Hancock%20Rd%2C%20Williamstown%2C%20MA%2001267!5e1!3m2!1sen!2sus!4v1682560243115!5m2!1sen!2sus" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      {/* <div className='hotel'>
         <img className='bloom-pic rounded' src={bloom} alt="usAtBridge" />
         <div className='hotel-text'>
           <p className='lead'>Events</p>
@@ -114,10 +139,10 @@ export default function Home() {
 
       <div className='food'>
         <div className='foodItem'>Food</div>
-      </div>
+      </div> */}
 
-      <div className="song">
-        <div className="lead">Got a song you'd like to reqeust?</div>
+      <div className="py-4">
+        <div className="lead pb-3">Got a song you'd like to reqeust?</div>
         <SongRequest/>
       </div>
       <Footer />
