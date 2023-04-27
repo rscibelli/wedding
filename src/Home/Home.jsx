@@ -63,7 +63,7 @@ export default function Home() {
         <div className="address">Williamstown, MA 01267</div>
       </div>
 
-      <div className='pb-2'>
+      <div className='pb-2 w-100'>
         <div className='row py-5'>
           <div className='col my-auto'>
             <img
@@ -89,7 +89,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='pb-2'>
+      <div className='pb-2 w-100'>
         <div className='row py-5'>
           <div className='col'>
             <div className="jumbotron text-end">
@@ -97,7 +97,7 @@ export default function Home() {
               <p className="lead">Ceremony</p>
             </div>
           </div>
-          <div className='col-md-auto my-auto'>
+          <div className='col my-auto'>
             <div className="">
               <h3>&#x2022;</h3>
             </div>
