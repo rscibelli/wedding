@@ -76,25 +76,25 @@ export default function Home() {
       </div>
 
       <div>
-        <div className='row py-4'>
-          <div className='col my-auto'>
+        <div className='row py-4 px-3'>
+          <div className='col '>
             <img
               src={indie1}
-              className="w-75 rounded"
+              className="w-100 rounded"
               alt="Boat on Calm Water"
             />
           </div>
-          <div className='col my-auto'>
+          <div className='col '>
             <img
               src={sim}
-              className="w-75 rounded"
+              className="w-100 rounded"
               alt="Boat on Calm Water"
             />
           </div>
-          <div className='col my-auto'>
+          <div className='col'>
             <img
               src={indie2}
-              className="w-75 rounded"
+              className="w-100 rounded"
               alt="Boat on Calm Water"
             />
           </div>
@@ -111,13 +111,16 @@ export default function Home() {
           <div className='col my-auto text-end'>
             <button type="button" class="btn btn-outline-primary">Reserve a Room</button>
           </div>
-          <div className='col-sm-1 my-auto'>
+          <div className='col-1 my-auto'>
             <div class="vr"></div>
           </div>
           <div className='col my-auto text-start'>
             <h5>(413) 458-7333</h5>
           </div>
         </div>
+
+        <p className='pt-5'>A school bus is scheduled to pick people up in front of the hotel at 3pm on the 3rd</p>
+        <p>The school bus will then take periodic trips back throughout the evening upon demand</p>
       </div>
 
       {/* <div className="ratio ratio-21x9">
@@ -125,9 +128,9 @@ export default function Home() {
         <iframe title='venue-on-map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.89315990861!2d-73.28920042435702!3d42.6100874192696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e0ad8dc321d361%3A0x392a649d9754b318!2s2422%20Hancock%20Rd%2C%20Williamstown%2C%20MA%2001267!5e1!3m2!1sen!2sus!4v1682560243115!5m2!1sen!2sus" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
       </div> */}
 
-      <div className='row py-5'>
+      <div className='row py-5 px-3'>
         <div className='col'>
-          <div class="card w-75 p-3 mx-auto">
+          <div class="card w-100 p-3 ms-auto">
             <div class="card-body">
               <h3 class="card-title">Venue</h3>
             </div>
@@ -137,7 +140,7 @@ export default function Home() {
           </div>
         </div>
         <div className='col'>
-          <div class="card w-75 p-3 mx-auto">
+          <div class="card w-100 p-3 me-auto">
             <div class="card-body">
               <h3 class="card-title">Hotel</h3>
             </div>
