@@ -1,53 +1,21 @@
 import React from 'react';
 import "./Home.css";
 import 'bootswatch/dist/minty/bootstrap.min.css';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import Carousel from '../Carousel/Carousel.jsx';
-import beach from '../Pictures/beach-dark.jpg'
-// import usAtBridge from '../Pictures/usAtBridge.jpg'
-// import bloom from '../Pictures/bloom.jpeg';
 import sim from '../Pictures/sim.jpg';
 import indie1 from '../Pictures/indie.jpg';
 import indie2 from '../Pictures/indiebox.jpg';
-// import river from '../Pictures/river.jpg'
-// import josh from '../Pictures/josh.jpg'
-import Footer from '../Footer/Footer.jsx';
-import SongRequest from '../SongRequest/SongRequest';
 
 export default function Home() {
 
   return (
     <div>
-      {/* <header style={{ paddingLeft: 0 }}>
-        <div
-          className='text-center bg-image hero'
-        >
-          <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
-            <div className='d-flex justify-content-center align-items-center'>
-              <div className='text-white'>
-                <h1 className='mb-3 lead'>Heading</h1>
-                <h4 className='mb-3'>Subheading</h4>
-                <a className='btn btn-outline-light btn-lg' href='#!' role='button'>
-                  Call to action
-                </a>
-              </div>
-            </div>
+      <div class="hero-image-home">
+        <div class="hero-text-home">
+          <div className="maddie">
+            <div>Madeline Muprhy</div>
           </div>
-        </div>
-      </header> */}
-
-      <div className='pictureAndNames'>
-        <img className='beach' src={beach} alt="beach" />
-        <div className="mask">
-          <div className="names">
-            <div >
-              <div className="maddie">
-                <div>Madeline Muprhy</div>
-              </div>
-              <div className="rob">
-                <div>Robert Scibelli</div>
-              </div>
-            </div>
+          <div className="rob">
+            <div>Robert Scibelli</div>
           </div>
         </div>
       </div>
@@ -151,11 +119,6 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="py-4">
-        <div className="lead pb-3">Got a song you'd like to reqeust?</div>
-        <SongRequest/>
-      </div>
-      <Footer />
     </div>
   );
 }

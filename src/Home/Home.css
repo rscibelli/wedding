@@ -1,36 +1,20 @@
-.pictureAndNames {
-    width: 100%;
+.hero-image-home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Pictures/beach.jpg");
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-    overflow: auto;
 }
-
-.beach {
-    width: 100%;
-}
-
-.hero {
-    background-image: url("../Pictures/beach.jpg");
-}
-
-/* .mask {
-    float: left;
-    width: 100%;
+  
+.hero-text-home {
     position: absolute;
-    top: 10px;
-    z-index: 1000;
-    background-color: 'rgba(0, 0, 0, 0.6)';
-} */
-
-.names {
-    float: left;
-    width: 100%;
-    position: absolute;
-    top: 10px;
-    z-index: 1000;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
     font-family: 'Amatic SC';
     font-size: 40px;
-    color: rgb(226, 226, 226);
-    padding-top: 30px;
 }
 
 .names-row {
