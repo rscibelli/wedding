@@ -21,3 +21,15 @@ export const createSongRequest = (data) => {
         console.log(e);
         });
 }
+
+export const getSongRequests = async () => {
+    const options = {
+        headers: {
+            'Access-Control-Allow-Origin': '*',
+        },
+    };
+
+    let response = await fetch(baseUrl + '/song-request', options);
+    let data = await response.json();
+    return data;
+}

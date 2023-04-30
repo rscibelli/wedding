@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./SongRequest.css";
 import 'bootswatch/dist/minty/bootstrap.min.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form'
-// import { createSongRequest } from '../functions';
+import { createSongRequest, getSongRequests } from '../functions';
 
 export default function SongRequest() {
     const [show, setShow] = useState(false);
@@ -13,6 +13,12 @@ export default function SongRequest() {
     const [artist, setArtist] = useState(null);
     const [name, setName] = useState(null);
     // const [status, setStatus] = useState(null);
+
+    let data = []
+
+    // useEffect(() => {
+    //   data = getTableData()
+    // });
 
     const toggleShow = () => setShow(!show);
 
@@ -27,13 +33,38 @@ export default function SongRequest() {
         artist: artist.target.value,
         name: nameValue
       }
-      // let postStatus = createSongRequest(toPost)
+      createSongRequest(toPost)
       // setStatus(postStatus)
       console.log(toPost)
       setSong(null)
       setArtist(null)
       setName(null)
       setShow(!show)
+    }
+
+    const getTableData = () => {
+      let tableData = []
+      let rowNum = 0
+
+      let songs = getSongRequests()
+
+      songs.array.forEach(request => {
+        tableData.push(
+          <tr>
+            <th scope="row">{rowNum++}</th>
+            <td>{request.song}</td>
+            <td>{request.artist}</td>
+            <td>{request.name}</td>
+          </tr>
+        )
+      });
+
+      return tableData
+    }
+
+    const callSongs = () => {
+      let data = getSongRequests()
+      console.log(data)
     }
 
     return (
@@ -58,12 +89,13 @@ export default function SongRequest() {
               </tr>
             </thead>
             <tbody>
-              <tr>
+              {data}
+              {/* <tr>
                 <th scope="row">1</th>
                 <td>Through the fire and the flames</td>
                 <td>DragonForce</td>
                 <td>Rob</td>
-              </tr>
+              </tr> */}
             </tbody>
           </table>
         </div>
@@ -115,6 +147,8 @@ export default function SongRequest() {
             {status}
           </div>
         </div> */}
+
+        <Button variant="btn btn-outline-primary" onClick={callSongs}>click to get the data</Button>
 
       </div>
     );
