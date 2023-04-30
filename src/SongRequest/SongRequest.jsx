@@ -12,13 +12,12 @@ export default function SongRequest() {
     const [song, setSong] = useState(null);
     const [artist, setArtist] = useState(null);
     const [name, setName] = useState(null);
+    const [data, setData] = useState([])
     // const [status, setStatus] = useState(null);
 
-    let data = []
-
-    // useEffect(() => {
-    //   data = getTableData()
-    // });
+    useEffect(() => {
+      getTableData()
+    });
 
     const toggleShow = () => setShow(!show);
 
@@ -59,12 +58,12 @@ export default function SongRequest() {
         )
       });
 
-      return tableData
+      setData(tableData)
     }
 
     const callSongs = () => {
-      let data = getSongRequests()
-      console.log(data)
+      let datatemp = getSongRequests()
+      console.log(datatemp)
     }
 
     return (

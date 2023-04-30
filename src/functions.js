@@ -1,4 +1,5 @@
-const baseUrl = "http://10.0.0.251:8080"
+// const baseUrl = "http://10.0.0.251:8080"
+const baseUrl = "http://localhost:8080"
 
 export const createSongRequest = (data) => {
     const options = {
@@ -10,25 +11,20 @@ export const createSongRequest = (data) => {
     };
 
     fetch(baseUrl + '/song-request', options)
-    .then(data => {
-        // if (!data.ok) {
-        //   throw Error(data.status);
-        // }
-        return data.json();
+        .then(data => {
+            if (!data.ok) {
+            console.log(data.status);
+            console.log(data.json());
+            }
+            return data.json();
         }).then(update => {
-        console.log(update);
+            console.log(update);
         }).catch(e => {
-        console.log(e);
+            console.log(e);
         });
 }
 
 export const getSongRequests = async () => {
-    const options = {
-        headers: {
-            'Access-Control-Allow-Origin': '*',
-        },
-    };
-
     let response = await fetch(baseUrl + '/song-request');
     let data = await response.json();
     return data;
