@@ -5,14 +5,14 @@ import 'bootswatch/dist/minty/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form'
-import { createSongRequest } from '../functions';
+// import { createSongRequest } from '../functions';
 
 export default function SongRequest() {
     const [show, setShow] = useState(false);
     const [song, setSong] = useState(null);
     const [artist, setArtist] = useState(null);
     const [name, setName] = useState(null);
-    const [status, setStatus] = useState(null);
+    // const [status, setStatus] = useState(null);
 
     const toggleShow = () => setShow(!show);
 
@@ -27,8 +27,9 @@ export default function SongRequest() {
         artist: artist.target.value,
         name: nameValue
       }
-      let postStatus = createSongRequest(toPost)
-      setStatus(postStatus)
+      // let postStatus = createSongRequest(toPost)
+      // setStatus(postStatus)
+      console.log(toPost)
       setSong(null)
       setArtist(null)
       setName(null)
