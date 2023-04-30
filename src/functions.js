@@ -29,7 +29,7 @@ export const getSongRequests = async () => {
         },
     };
 
-    let response = await fetch(baseUrl + '/song-request', options);
+    let response = await fetch(baseUrl + '/song-request');
     let data = await response.json();
     return data;
 }
