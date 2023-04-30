@@ -13,8 +13,8 @@ export const createSongRequest = (data) => {
     fetch(baseUrl + '/song-request', options)
         .then(data => {
             if (!data.ok) {
-            console.log(data.status);
-            console.log(data.json());
+                console.log(data.status);
+                console.log(data.json());
             }
             return data.json();
         }).then(update => {
@@ -25,7 +25,7 @@ export const createSongRequest = (data) => {
 }
 
 export const getSongRequests = async () => {
-    let response = await fetch(baseUrl + '/song-request');
-    let data = await response.json();
-    return data;
+    const response = await fetch(baseUrl + '/song-request');
+    const jsonData = await response.json();
+    return jsonData
 }

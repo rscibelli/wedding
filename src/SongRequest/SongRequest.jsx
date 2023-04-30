@@ -12,13 +12,13 @@ export default function SongRequest() {
     const [song, setSong] = useState(null);
     const [artist, setArtist] = useState(null);
     const [name, setName] = useState(null);
-    const [data, setData] = useState([])
-    const [tableData, setTableData] = useState([])
+    const [data, setData] = useState(null);
+    const [tableData, setTableData] = useState(null);
     // const [status, setStatus] = useState(null);
 
     useEffect(() => {
-      getTableData()
-    });
+      populateTableData()
+    }, [])
 
     const toggleShow = () => setShow(!show);
 
@@ -42,31 +42,33 @@ export default function SongRequest() {
       setShow(!show)
     }
 
-    const getTableData = () => {
-      callSongs()
-      let tableData = []
-      let rowNum = 0
+    const populateTableData = async () => {
+      // await callSongs()
+      let junk = await getSongRequests()
+      // console.log(data)
+      if (junk) {
+        let localTableData = []
+        let rowNum = 1
 
-      let songs = getSongRequests()
-
-      songs.array.forEach(request => {
-        tableData.push(
-          <tr>
-            <th scope="row">{rowNum++}</th>
-            <td>{request.song}</td>
-            <td>{request.artist}</td>
-            <td>{request.name}</td>
-          </tr>
-        )
-      });
-
-      setTableData(tableData)
+        junk.songs.forEach(request => {
+          localTableData.push(
+            <tr>
+              <th scope="row">{rowNum++}</th>
+              <td>{request.song}</td>
+              <td>{request.artist}</td>
+              <td>{request.name}</td>
+            </tr>
+          )
+        })
+        setTableData(localTableData)
+      }
     }
 
-    const callSongs = () => {
-      let datatemp = getSongRequests()
-      console.log(datatemp)
-      setTableData(datatemp)
+    const callSongs = async () => {
+      let junk = await getSongRequests()
+      console.log(junk)
+      setData("hello")
+      // console.log(data)
     }
 
     return (
@@ -75,7 +77,7 @@ export default function SongRequest() {
           <div className="hero-text-song">
           <div className="lead pb-3">Request a song to be played at the wedding!</div>
 
-          <Button variant="btn btn-outline-primary" onClick={toggleShow}>Request a song</Button>
+          <Button variant="btn btn-outline-primary" onClick={toggleShow}>Request a Song</Button>
           </div>
         </div>
 
@@ -92,12 +94,6 @@ export default function SongRequest() {
             </thead>
             <tbody>
               {tableData}
-              {/* <tr>
-                <th scope="row">1</th>
-                <td>Through the fire and the flames</td>
-                <td>DragonForce</td>
-                <td>Rob</td>
-              </tr> */}
             </tbody>
           </table>
         </div>
@@ -149,8 +145,6 @@ export default function SongRequest() {
             {status}
           </div>
         </div> */}
-
-        <Button variant="btn btn-outline-primary" onClick={callSongs}>click to get the data</Button>
 
       </div>
     );
