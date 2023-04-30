@@ -13,6 +13,7 @@ export default function SongRequest() {
     const [artist, setArtist] = useState(null);
     const [name, setName] = useState(null);
     const [data, setData] = useState([])
+    const [tableData, setTableData] = useState([])
     // const [status, setStatus] = useState(null);
 
     useEffect(() => {
@@ -42,6 +43,7 @@ export default function SongRequest() {
     }
 
     const getTableData = () => {
+      callSongs()
       let tableData = []
       let rowNum = 0
 
@@ -58,12 +60,13 @@ export default function SongRequest() {
         )
       });
 
-      setData(tableData)
+      setTableData(tableData)
     }
 
     const callSongs = () => {
       let datatemp = getSongRequests()
       console.log(datatemp)
+      setTableData(datatemp)
     }
 
     return (
@@ -88,7 +91,7 @@ export default function SongRequest() {
               </tr>
             </thead>
             <tbody>
-              {data}
+              {tableData}
               {/* <tr>
                 <th scope="row">1</th>
                 <td>Through the fire and the flames</td>
