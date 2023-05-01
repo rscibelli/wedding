@@ -12,6 +12,10 @@
 
 `docker start <container name> &`
 
+## enter contaier
+
+`docker exec -it wedding sh`
+
 -------------------------------------------------------
 # Getting Started with Create React App
 

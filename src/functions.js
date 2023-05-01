@@ -1,5 +1,6 @@
-const baseUrl = "http://10.0.0.251:8080"
+// const baseUrl = "http://10.0.0.251:8080"
 // const baseUrl = "http://localhost:8080"
+const baseUrl = "http://55mont.ddns.net:8080"
 
 export const createSongRequest = (data) => {
     const options = {
