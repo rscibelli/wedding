@@ -12,7 +12,7 @@ export default function SongRequest() {
     const [song, setSong] = useState(null);
     const [artist, setArtist] = useState(null);
     const [name, setName] = useState(null);
-    const [data, setData] = useState(null);
+    // const [data, setData] = useState(null);
     const [tableData, setTableData] = useState(null);
     // const [status, setStatus] = useState(null);
 
@@ -62,13 +62,6 @@ export default function SongRequest() {
         })
         setTableData(localTableData)
       }
-    }
-
-    const callSongs = async () => {
-      let junk = await getSongRequests()
-      console.log(junk)
-      setData("hello")
-      // console.log(data)
     }
 
     return (

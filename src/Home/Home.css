@@ -17,18 +17,6 @@
     font-size: 40px;
 }
 
-.names-row {
-    display: flex;
-}
-
-.maddie {
-    flex: 1;
-}
-
-.rob {
-    flex: 1;
-}
-
 .married-tag {
     color: #3d4351;
     font-size: 35px;
