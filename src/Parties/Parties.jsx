@@ -17,9 +17,9 @@ export default function Parties() {
                 <div className='row pt-1'>
                     <div className='col'>
                         <h5 className='pb-2'>Bridesmaids</h5>
-                        <div><strong>Carly Forcade</strong></div>
                         <div><strong>Kelley Murphy</strong></div>
                         <div><strong>Kay Kay Murphy</strong></div>
+                        <div>Carly Forcade</div>
                         <div>Lauren Murphy</div>
                         <div>Kara Duprey</div>
                         <div>Sam Gilmore</div>

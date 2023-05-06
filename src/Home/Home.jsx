@@ -50,18 +50,18 @@ export default function Home() {
         <div className='row pt-5'>
           <div className='col'>
             <h3 className='pb-2'>Hors D'Oeuvres</h3>
-            <p>Crème Brule Salmon Filets</p>
-            <p>Chicken Francaise</p>
-            <p>Roasted Vegetable Lasagna</p>
+            <p>Buffalo Chicken Empanadas</p>
+            <p>Mac and Cheese Fritters</p>
+            <p>Miniature Beef Wellingtons</p>
           </div>
           <div className='col-1 mx-auto'>
             <div className="vr" style={{height: "150px"}}></div>
           </div>
           <div className='col'>
             <h3 className='pb-2'>Plated Dinner</h3>
-            <p>Buffalo Chicken Empanadas</p>
-            <p>Mac and Cheese Fritters</p>
-            <p>Miniature Beef Wellingtons</p>
+            <p>Crème Brule Salmon Filets</p>
+            <p>Chicken Francaise</p>
+            <p>Roasted Vegetable Lasagna</p>
           </div>
         </div>
 
