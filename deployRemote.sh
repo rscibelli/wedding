@@ -7,7 +7,7 @@ sshpass -p ${ssh_pass} ssh pi@24.60.191.54 << EOF
     cd repositories/wedding
     git pull
     docker build -t wedding-build .
-    docker run -d -p 3000:3000 --name wedding wedding-build
+    docker run -d -p 443:443 --name wedding wedding-build
     docker image ls
     docker container ls
 EOF
