@@ -3,8 +3,8 @@ FROM node:16-alpine
 WORKDIR /app
 # Copy app files
 COPY . .
-COPY /etc/letsencrypt/live/www.robandmaddie.com/fullchain.pem /cert
-COPY /etc/letsencrypt/live/www.robandmaddie.com/privkey.pem /cert
+# COPY /etc/letsencrypt/live/www.robandmaddie.com/fullchain.pem /cert
+# COPY /etc/letsencrypt/live/www.robandmaddie.com/privkey.pem /cert
 # ==== BUILD =====
 # Install dependencies (npm ci makes sure the exact versions in the lockfile gets installed)
 RUN npm ci
