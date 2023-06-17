@@ -12,9 +12,8 @@ export default function SongRequest() {
     const [song, setSong] = useState(null);
     const [artist, setArtist] = useState(null);
     const [name, setName] = useState(null);
-    // const [data, setData] = useState(null);
     const [tableData, setTableData] = useState(null);
-    // const [status, setStatus] = useState(null);
+    const [errors, setErrors] = useState({})
 
     useEffect(() => {
       populateTableData()
@@ -22,35 +21,47 @@ export default function SongRequest() {
 
     const toggleShow = () => setShow(!show);
 
-    const postData = () => {
-      let nameValue = ""
-      if(name) {
-        nameValue = name.target.value
-      }
-
-      let toPost = {
-        song: song.target.value,
-        artist: artist.target.value,
-        name: nameValue
-      }
-      createSongRequest(toPost)
-      // setStatus(postStatus)
-      console.log(toPost)
+    const closeModal = () => {
+      setErrors({})
       setSong(null)
       setArtist(null)
       setName(null)
       setShow(!show)
     }
 
+    const postData = () => {
+      const newErrors = findFormErrors()
+      
+      if (Object.keys(newErrors).length > 0) {
+        setErrors(newErrors)
+      } else {
+        let nameValue = ""
+        if(name) {
+          nameValue = name.target.value
+        }
+
+        let toPost = {
+          song: song.target.value,
+          artist: artist.target.value,
+          name: nameValue
+        }
+        createSongRequest(toPost)
+        console.log(toPost)
+        setSong(null)
+        setArtist(null)
+        setName(null)
+        setErrors({})
+        setShow(!show)
+      }
+    }
+
     const populateTableData = async () => {
-      // await callSongs()
-      let junk = await getSongRequests()
-      // console.log(data)
-      if (junk) {
+      let data = await getSongRequests()
+      if (data) {
         let localTableData = []
         let rowNum = 1
 
-        junk.songs.forEach(request => {
+        data.songs.forEach(request => {
           localTableData.push(
             <tr>
               <th scope="row">{rowNum++}</th>
@@ -62,6 +73,14 @@ export default function SongRequest() {
         })
         setTableData(localTableData)
       }
+    }
+
+    const findFormErrors = () => {
+      const newErrors = {}
+      if ( !song || song === '' ) newErrors.song = 'Song cannot be blank!'
+      if ( !artist || artist === '' ) newErrors.artist = 'Artist cannot be blank!'
+  
+      return newErrors
     }
 
     return (
@@ -91,40 +110,26 @@ export default function SongRequest() {
           </table>
         </div>
 
-        <Modal show={show} onHide={toggleShow}>
+        <Modal show={show} onHide={closeModal}>
           <Modal.Header closeButton>
             <Modal.Title>Song Request</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <Form.Group >
-                <Form.Label>Song *</Form.Label>
-                <Form.Control type="text" onChange={setSong} required /> 
+                <Form.Label>Song</Form.Label>
+                <Form.Control type="text" onChange={setSong} isInvalid={ !!errors.song } />
+                <Form.Control.Feedback type='invalid'>{ errors.song }</Form.Control.Feedback>
 
-                <Form.Label>Artist *</Form.Label>
-                <Form.Control type="text" onChange={setArtist} />   
+                <Form.Label>Artist</Form.Label>
+                <Form.Control type="text" onChange={setArtist} isInvalid={ !!errors.artist } />
+                <Form.Control.Feedback type='invalid'>{ errors.artist }</Form.Control.Feedback>
 
-                <Form.Label>Your Name</Form.Label>
+                <Form.Label>Your Name <small>(Optinal)</small></Form.Label>
                 <Form.Control type="text" onChange={setName} />           
             </Form.Group>
-            {/* <form className="needs-validation" onsubmit={postData(this)} novalidate>
-              <div className="mb-3">
-                <label for="song1" className="form-label">Song *</label>
-                <input type="song" className="form-control" id="song1" required />
-              </div>
-              <div className="mb-3">
-                <label for="artist1" className="form-label">Artist *</label>
-                <input type="artist" className="form-control" id="artist1" required />
-              </div>
-              <div className="mb-3">
-                <label for="name1" className="form-label">Your Name</label>
-                <input type="artist" className="form-control" id="name1" />
-                <p id="emailHelp" className="form-text"><small>Optinal</small></p>
-              </div>
-              <button type="submit" className="btn btn-primary">Submit</button>
-            </form> */}
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={toggleShow}>
+            <Button variant="secondary" onClick={closeModal}>
               Close
             </Button>
             <Button variant="primary" onClick={postData}>
@@ -132,12 +137,6 @@ export default function SongRequest() {
             </Button>
           </Modal.Footer>
         </Modal>
-
-        {/* <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
-          <div class="toast-body">
-            {status}
-          </div>
-        </div> */}
 
       </div>
     );
