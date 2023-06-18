@@ -11,7 +11,7 @@ export default function Parties() {
                 </div>
             </div>
 
-            <div className='py-4 px-3'>
+            <div className='pt-4 px-3 pb-2'>
                 <h3 className='pb-3'>The Wedding Parties</h3>
 
                 <div className='row pt-1'>
@@ -37,6 +37,9 @@ export default function Parties() {
                         <div>Donald Odell</div>
                     </div>
                 </div>
+
+                <h5 className='mb-0 pt-3'>Officiant</h5>
+                <p>Benjamin Murphy</p>
             </div>
 
             <hr className='w-75 mx-auto' />
