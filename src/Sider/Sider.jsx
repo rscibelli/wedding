@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Sider.css';
 import 'bootswatch/dist/minty/bootstrap.min.css';
-// import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Sider() {
     return (
@@ -9,7 +9,7 @@ export default function Sider() {
             <div className="container-fluid px-3">
                 <Link className="navbar-brand" to="/">MadRob</Link>
                 <Link className="nav-link" to="/hotel">Hotel</Link>
-                <Link className="nav-link" to="/parties">Parties</Link>
+                <Link className="nav-link" to="/parties">Party</Link>
                 <Link className="nav-link" to="/song">Song</Link>
             </div>
         </nav>

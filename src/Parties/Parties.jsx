@@ -12,7 +12,7 @@ export default function Parties() {
             </div>
 
             <div className='pt-4 px-3 pb-2'>
-                <h3 className='pb-3'>The Wedding Parties</h3>
+                <h3 className='pb-3'>The Wedding Party</h3>
 
                 <div className='row pt-1'>
                     <div className='col'>
@@ -25,7 +25,7 @@ export default function Parties() {
                         <div>Sam Gilmore</div>
                     </div>
                     <div className='col-1 my-auto'>
-                        <div className="vr" style={{height: "150px"}}></div>
+                        <div className="vr" style={{height: "100px"}}></div>
                     </div>
                     <div className='col'>
                         <h5 className='pb-2'>Groomsmen</h5>
@@ -38,15 +38,16 @@ export default function Parties() {
                     </div>
                 </div>
 
-                <h5 className='mb-0 pt-3'>Officiant</h5>
+                <h5 className='mb-0 py-3'>Officiant</h5>
                 <p>Benjamin Murphy</p>
             </div>
 
             <hr className='w-75 mx-auto' />
 
             <div className='py-4 px-3'>
-                <h3 className='pb-3'>Schedule</h3>
-                <p>There will be things here</p>
+                <h3 className='pb-3'>Wedding Reahersal</h3>
+                <p>Please meet at Bloom Meadows on Friday the 2nd at <code>(time TBD)</code> for the wedding rehersal</p>
+                <p>Afterwards we will plan to make a party reservation at a restaurant in Williamstown for the rehersal dinner</p>
             </div>
         </div>
     )
