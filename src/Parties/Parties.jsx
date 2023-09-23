@@ -46,8 +46,8 @@ export default function Parties() {
 
             <div className='py-4 px-3'>
                 <h3 className='pb-3'>Wedding Reahersal</h3>
-                <p>Please meet at Bloom Meadows on Friday the 2nd at <code>(time TBD)</code> for the wedding rehersal</p>
-                <p>Afterwards we will plan to make a party reservation at a restaurant in Williamstown for the rehersal dinner</p>
+                <p>Please meet at Bloom Meadows on Friday August 2nd at <code>(time TBD)</code> for the wedding rehersal</p>
+                <p>Afterwards we plan to make a party reservation at a restaurant in Williamstown for the rehersal dinner</p>
             </div>
         </div>
     )

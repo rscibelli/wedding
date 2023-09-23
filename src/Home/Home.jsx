@@ -177,7 +177,7 @@ export default function Home() {
       </div>
 
       <div className='py-4'>
-        <h6>Navigate this page</h6>
+        <h6>Navigate this website</h6>
 
         <div className="btn-group" role="group">
             <Link type="button" class="btn btn-info" to="/hotel">Hotel</Link>
