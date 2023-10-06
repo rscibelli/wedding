@@ -211,9 +211,9 @@ export default function Home() {
         <h6>Navigate this website</h6>
 
         <div className="btn-group" role="group">
-            <Link type="button" class="btn btn-info" to="/hotel">Hotel</Link>
-            <Link type="button" class="btn btn-info" to="/parties">Party</Link>
-            <Link type="button" class="btn btn-info" to="/song">Song</Link>
+            <Link type="button" className="btn btn-info" to="/hotel">Hotel</Link>
+            {/* <Link type="button" class="btn btn-info" to="/parties">Party</Link> */}
+            <Link type="button" className="btn btn-info" to="/song">Song</Link>
         </div>
       </div>
 
