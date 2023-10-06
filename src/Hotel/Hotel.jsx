@@ -19,24 +19,20 @@ export default function Home() {
 
             <div className='py-4 px-3'>
                 <h3 className='pb-3'>Hotel</h3>
-                <p>A room block has been reserved at Jiminy Peak Resort & The Fairfield Inn & Suits</p>
+                <p>A room block has been reserved at The Fairfield Inn & Suites.  There is a 2 night minimum with the room block.  For guests looking to stay just one night, there are several Airbnbs in the area.</p>
 
+                <h5 className='pt-3'>The Fairfield Inn & Suits</h5>
+                <p>430 Main St, Williamstown, MA 01267</p>
                 <h3><span className="badge rounded-pill text-bg-primary">Aug 2nd - 4th</span></h3>
-
-                <div className='row pt-4'>
-                    <div className='col my-auto text-end'>
-                        <h5>Jiminy Peak Resort</h5>
-                        <p>37 Corey Rd, Hancock, MA 01237</p>
-                        <p>(413) 738-5500</p>
-                        <button type="button" className="btn btn-outline-primary" onClick={toggleModal}>Reserve a Room</button>
+                <div className='row pt-2'>
+                    <div className='col my-auto'>
+                        <p className='mb-0 pt-2'>(413) 458-7333</p>
+                        <p><small>Under Murphy/Scibelli</small></p>
                     </div>
                     <div className='col-1 my-auto'>
-                        <div className="vr" style={{height: "100px"}}></div>
+                        <div className="vr"></div>
                     </div>
-                    <div className='col my-auto text-start'>
-                        <h5>The Fairfield Inn & Suits</h5>
-                        <p>430 Main St, Williamstown, MA 01267</p>
-                        <p>(413) 458-7333</p>
+                    <div className='col my-auto'>
                         <button type="button" className="btn btn-outline-primary" onClick={toggleModal}>Reserve a Room</button>
                     </div>
                 </div>
@@ -44,13 +40,8 @@ export default function Home() {
 
             {/* <hr className='w-75 mx-auto' /> */}
 
-            <div className='row'>
-                <div className='col mx-1 ratio ratio-1x1'>
-                    <iframe title='jiminy' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2919.848895161038!2d-73.29256242406595!3d42.55565602272218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e752b2e3f484a5%3A0x3d75ffe634517335!2sJiminy%20Peak%20Mountain%20Resort!5e1!3m2!1sen!2sus!4v1695495185885!5m2!1sen!2sus" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div className='col mx-1 ratio ratio-1x1'>
-                    <iframe title='fairfield' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9935.55392055457!2d-73.19441925632063!3d42.70528969526227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e0ba1b77400001%3A0x3ce3e33730fd548b!2sFairfield%20Inn%20%26%20Suites%20by%20Marriott%20Williamstown!5e1!3m2!1sen!2sus!4v1682634560503!5m2!1sen!2sus" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+            <div className='ratio ratio-16x9'>
+                <iframe title='fairfield' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9935.55392055457!2d-73.19441925632063!3d42.70528969526227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e0ba1b77400001%3A0x3ce3e33730fd548b!2sFairfield%20Inn%20%26%20Suites%20by%20Marriott%20Williamstown!5e1!3m2!1sen!2sus!4v1682634560503!5m2!1sen!2sus" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
             {/* <div className="ratio ratio-16x9">
@@ -64,7 +55,7 @@ export default function Home() {
             </div>
 
             <div className='px-3 py-4'>
-                <h3 className='pb-3'>Airbnb</h3>
+                <h3 className='pb-2'>Airbnb</h3>
                 <p>There are several Airbnbs in the area that are available for rent</p>
                 <p>See what's available using the button below</p>
 

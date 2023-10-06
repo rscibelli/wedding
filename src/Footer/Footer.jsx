@@ -6,7 +6,7 @@ export default function Footer() {
         <div className="footer">
             <div className='pt-3 px-3'>
                 <p className='my-0'><small>This website was brought to you by the raspberry pi in Rob & Maddie's TV stand</small></p>
-                <p className='my-0'><small>If you are experience any issues with this website, text me at (413) 335-7172</small></p>
+                <p className='my-0'><small>If you are experiencing any issues with this website, please let me know</small></p>
             </div>
         </div>
     );

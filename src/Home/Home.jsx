@@ -171,6 +171,37 @@ export default function Home() {
         </div>
       </div>
 
+      <div className='pt-4 px-3 pb-2'>
+        <h3 className='pb-3'>The Wedding Party</h3>
+
+        <div className='row pt-1'>
+          <div className='col'>
+            <h5 className='pb-2'>Bridesmaids</h5>
+            <div><strong>Kelley Murphy</strong></div>
+            <div><strong>Kay Kay Murphy</strong></div>
+            <div>Carly Forcade</div>
+            <div>Lauren Murphy</div>
+            <div>Kara Duprey</div>
+            <div>Sam Gilmore</div>
+          </div>
+          <div className='col-1 my-auto'>
+            <div className="vr" style={{height: "100px"}}></div>
+          </div>
+          <div className='col'>
+            <h5 className='pb-2'>Groomsmen</h5>
+            <div><strong>Jon Scibelli</strong></div>
+            <div><strong>Mike Scibelli</strong></div>
+            <div>Evan O'Keefe</div>
+            <div>Paul Kavanagh</div>
+            <div>Max Winalski</div>
+            <div>Donald Odell</div>
+          </div>
+        </div>
+
+        <h5 className='mb-0 py-3'>Officiant</h5>
+        <p>Benjamin Murphy</p>
+      </div>
+
       <div className='pt-3 px-3'>
         <h3 className='pb-1'>Other</h3>
         <button type='button' className="btn btn-primary" onClick={toggleModal}>Registry</button>

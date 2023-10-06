@@ -9,7 +9,7 @@ export default function Sider() {
             <div className="container-fluid px-3">
                 <Link className="navbar-brand" to="/">MadRob</Link>
                 <Link className="nav-link" to="/hotel">Hotel</Link>
-                <Link className="nav-link" to="/parties">Party</Link>
+                {/* <Link className="nav-link" to="/parties">Party</Link> */}
                 <Link className="nav-link" to="/song">Song</Link>
             </div>
         </nav>
