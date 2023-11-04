@@ -85,87 +85,87 @@ export default function Home() {
       </div>
 
       {/* pictures */}
-      <div class="row px-1">
-        <div class="col pe-1">
+      <div className="row px-1">
+        <div className="col pe-1">
           <img
             src={one}
-            class="w-100 shadow-1-strong rounded mb-2"
+            className="w-100 shadow-1-strong rounded mb-2"
             alt="Boat on Calm Water"
           />
 
           <img
             src={fourtyone}
-            class="w-100 shadow-1-strong rounded mb-2"
+            className="w-100 shadow-1-strong rounded mb-2"
             alt="Wintry Mountain Landscape"
           />
 
           <img
             src={seventytwo}
-            class="w-100 shadow-1-strong rounded mb-2"
+            className="w-100 shadow-1-strong rounded mb-2"
             alt="Mountains in the Clouds"
           />
 
           <img
             src={onetwentytwo}
-            class="w-100 shadow-1-strong rounded mb-2"
+            className="w-100 shadow-1-strong rounded mb-2"
             alt="Mountains in the Clouds"
           />
         </div>
 
-        <div class="col px-1">
+        <div className="col px-1">
           <img
             src={onetwentyeight}
-            class="w-100 shadow-1-strong rounded mb-2"
+            className="w-100 shadow-1-strong rounded mb-2"
             alt="Mountains in the Clouds"
           />
 
           <img
             src={fiftythree}
-            class="w-100 shadow-1-strong rounded mb-2"
+            className="w-100 shadow-1-strong rounded mb-2"
             alt="Boat on Calm Water"
           />
 
           <img
             src={fiftynine}
-            class="w-100 shadow-1-strong rounded mb-2"
+            className="w-100 shadow-1-strong rounded mb-2"
             alt="Mountains in the Clouds"
           />
 
           <img
             src={twentyfour}
-            class="w-100 shadow-1-strong rounded mb-2"
+            className="w-100 shadow-1-strong rounded mb-2"
             alt="Mountains in the Clouds"
           />
 
           <img
             src={oneeleven}
-            class="w-100 shadow-1-strong rounded mb-2"
+            className="w-100 shadow-1-strong rounded mb-2"
             alt="Mountains in the Clouds"
           />
         </div>
 
-        <div class="col ps-1">
+        <div className="col ps-1">
           <img
             src={thirtytwo}
-            class="w-100 shadow-1-strong rounded mb-2"
+            className="w-100 shadow-1-strong rounded mb-2"
             alt="Waves at Sea"
           />
 
           <img
             src={nine}
-            class="w-100 shadow-1-strong rounded mb-2"
+            className="w-100 shadow-1-strong rounded mb-2"
             alt="Yosemite National Park"
           />
 
           <img
             src={onetwenty}
-            class="w-100 shadow-1-strong rounded mb-2"
+            className="w-100 shadow-1-strong rounded mb-2"
             alt="Mountains in the Clouds"
           />
 
           <img
             src={onefourtyfive}
-            class="w-100 shadow-1-strong rounded mb-2"
+            className="w-100 shadow-1-strong rounded mb-2"
             alt="Mountains in the Clouds"
           />
         </div>
@@ -212,7 +212,7 @@ export default function Home() {
 
         <div className="btn-group" role="group">
             <Link type="button" className="btn btn-info" to="/hotel">Hotel</Link>
-            {/* <Link type="button" class="btn btn-info" to="/parties">Party</Link> */}
+            {/* <Link type="button" className="btn btn-info" to="/parties">Party</Link> */}
             <Link type="button" className="btn btn-info" to="/song">Song</Link>
         </div>
       </div>
