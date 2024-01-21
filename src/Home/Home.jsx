@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import "./Home.css";
 import 'bootswatch/dist/minty/bootstrap.min.css';
-import Modal from 'react-bootstrap/Modal';
+// import Modal from 'react-bootstrap/Modal';
 import one from '../Pictures/1.jpg';
 import nine from '../Pictures/9.jpg';
 import twentyfour from '../Pictures/24.jpg';
@@ -19,9 +19,8 @@ import onefourtyfive from '../Pictures/145.jpg';
 
 export default function Home() {
 
-  const [show, setShow] = useState(false);
-
-  const toggleModal = () => setShow(!show)
+  // const [show, setShow] = useState(false);
+  // const toggleModal = () => setShow(!show)
 
   return (
     <div>
@@ -204,7 +203,10 @@ export default function Home() {
 
       <div className='pt-3 px-3'>
         <h3 className='pb-1'>Other</h3>
-        <button type='button' className="btn btn-primary" onClick={toggleModal}>Registry</button>
+        {/* <button type='button' className="btn btn-primary" onClick={toggleModal}>Registry</button> */}
+        <a className="btn btn-primary" role="button" target='_blank' rel="noreferrer" href='https://registry.theknot.com/madeline-murphy-robert-scibelli-august-2024-ma/56845309'>
+          Registry
+        </a>
       </div>
 
       <div className='py-4'>
@@ -217,11 +219,11 @@ export default function Home() {
         </div>
       </div>
 
-      <Modal show={show} onHide={toggleModal}>
+      {/* <Modal show={show} onHide={toggleModal}>
         <Modal.Body className='text-center'>
           <h5>Registry coming soon!</h5>
         </Modal.Body>
-      </Modal>
+      </Modal> */}
 
     </div>
   );
