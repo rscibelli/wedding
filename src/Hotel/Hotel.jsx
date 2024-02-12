@@ -14,7 +14,7 @@ export default function Home() {
 
             <div className='py-4 px-3'>
                 <h3 className='pb-3'>Hotel</h3>
-                <p>A room block has been reserved at The Fairfield Inn & Suites.  There is a 2 night minimum with the room block.  For guests looking to stay just one night, there are several Airbnbs in the area.</p>
+                <p>A room block has been reserved at The Fairfield Inn & Suites. There is a 2 night minimum with the room block. However, guests can still book a one night stay at the regular hotel rate outside the room block. There are also several Airbnbs in the area, see link below.</p>
 
                 <h5 className='pt-3'>The Fairfield Inn & Suits</h5>
                 <p>430 Main St, Williamstown, MA 01267</p>
@@ -41,14 +41,14 @@ export default function Home() {
 
             <div className='px-3 py-4'>
                 <h3 className='mb-3'>Transportation</h3>
-                <p>A school bus is scheduled to pick people up in front of the hotel at 3pm on the 3rd</p>
-                <p>The bus will then take periodic trips back throughout the evening upon demand</p>
+                <p className='mb-0'>A school bus is scheduled to pick guests up in front of the hotel at 3:30pm on the 3rd.</p>
+                <p>The bus will then take periodic trips back throughout the evening, upon demand.</p>
             </div>
 
             <div className='px-3 py-4'>
                 <h3 className='pb-2'>Airbnb</h3>
-                <p>There are several Airbnbs in the area that are available for rent</p>
-                <p>See what's available using the button below</p>
+                <p className='mb-0'>There are several Airbnbs in the area that are available for rent.</p>
+                <p>See what's available using the button below.</p>
 
                 <a href="https://www.airbnb.com/s/Williamstown--Massachusetts--United-States/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2023-10-01&monthly_length=3&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&query=Williamstown%2C%20MA&place_id=ChIJlS9W-hGx4IkR35lTbykWRkQ&date_picker_type=calendar&checkin=2024-08-02&checkout=2024-08-04&adults=5&source=structured_search_input_header&search_type=autocomplete_click" className="btn btn-primary" role="button">
                     Airbnb search

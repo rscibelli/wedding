@@ -49,7 +49,7 @@ export default function Home() {
           <div className='col text-start'>
             <h4 className='pb-2'>August 3rd 2024</h4>
             <p>at</p>
-            <p>3:30 pm</p>
+            <p>4 O'Clock in the Afternoon</p>
           </div>
         </div>
       </div>
