@@ -41,7 +41,7 @@ export default function Home() {
 
             <div className='px-3 py-4'>
                 <h3 className='mb-3'>Transportation</h3>
-                <p className='mb-0'>A school bus is scheduled to pick guests up in front of the hotel at 3:30pm on the 3rd.</p>
+                <p className='mb-0'>Two school busses are scheduled to pick guests up in front of the hotel at 3:15pm & 3:30pm on the 3rd.</p>
                 <p>The bus will then take periodic trips back throughout the evening, upon demand.</p>
             </div>
 

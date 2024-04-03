@@ -5,8 +5,8 @@ import 'bootswatch/dist/minty/bootstrap.min.css';
 
 export default function Sider() {
     return (
-        <nav className="navbar fixed-top bg-body-tertiary navbar-expand-lg">
-            <div className="container-fluid px-3">
+        <nav className="navbar fixed-top navbar-expand-lg opaque-black-bg">
+            <div className="container-fluid justify-content-start px-3">
                 <Link className="navbar-brand" to="/">MadRob</Link>
                 <Link className="nav-link" to="/hotel">Hotel</Link>
                 {/* <Link className="nav-link" to="/parties">Party</Link> */}

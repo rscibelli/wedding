@@ -60,27 +60,33 @@ export default function Home() {
 
       <div className='py-5 x-5'>
         <h3>Food</h3>
-        <p className='px-5 mx-5 pt-3'><small>All the delicious food is brought to you by <a href="http://sethmias.com/">Seth Mias</a></small></p>
-
+        <p className='px-5 mx-5'><small>Brought to you by <a href="http://sethmias.com/">Seth Mias</a></small></p>
+        <div className='mx-5 px-5'>
+          <ul className="list-group list-group-flush">
+            <li className="list-group-item">Ale Braised Short Ribs with Balsamic Glaze and Caramelized Onions</li>
+            <li className="list-group-item">Chicken Francaise on Risotto</li>
+            <li className="list-group-item">Butternut Squash Ravioli with Sage Butter Cream Sauce</li>
+          </ul>
+        </div>
+{/* 
         <div className='row pt-5'>
           <div className='col'>
             <h3 className='pb-2'>Hors D'Oeuvres</h3>
-            <p>Coming Soon!</p>
-            {/* <p>Buffalo Chicken Empanadas</p>
-            <p>Mac and Cheese Fritters</p>
-            <p>Miniature Beef Wellingtons</p> */}
+            <p>Bacon Wrapped Scallops</p>
+            <p>BBQ Pulled Pork Sliders</p>
+            <p>Miniature Beef Wellingtons</p>
+            <p>Tomato Soup Shooter w/ Mini Grilled Cheese</p>
           </div>
           <div className='col-1 mx-auto'>
             <div className="vr" style={{height: "100px"}}></div>
           </div>
           <div className='col'>
             <h3 className='pb-2'>Plated Dinner</h3>
-            <p>Coming Soon!</p>
-            {/* <p>Crème Brule Salmon Filets</p>
-            <p>Chicken Francaise</p>
-            <p>Roasted Vegetable Lasagna</p> */}
+            <p>Ale Braised Short Ribs with Balsamic Glaze and Carmelized Onions </p>
+            <p>Chicken Francaise on Risotto</p>
+            <p>BButternut Squash Ravioli with Sage Butter Cream Sauce </p>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* pictures */}
