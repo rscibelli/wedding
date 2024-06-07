@@ -14,6 +14,11 @@ export default function Home() {
 
             <div className='py-4 px-3'>
                 <h3 className='pb-3'>Hotel</h3>
+
+                <div className="alert alert-secondary" role="alert">
+                    Be sure to book the hotel by June 18th for the discounted rate!
+                </div>
+
                 <p>A room block has been reserved at The Fairfield Inn & Suites. There is a 2 night minimum with the room block. However, guests can still book a one night stay at the regular hotel rate outside the room block. There are also several Airbnbs in the area, see link below.</p>
 
                 <h5 className='pt-3'>The Fairfield Inn & Suits</h5>
