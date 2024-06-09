@@ -15,15 +15,15 @@ RUN npm run build
 ENV NODE_ENV production
 
 # For running HTTPS
-ENV HTTPS true
-ENV SSL_CRT_FILE /certs/fullchain.pem
-ENV SSL_KEY_FILE /certs/privkey.pem
-ENV PORT 443
-EXPOSE 443
+# ENV HTTPS true
+# ENV SSL_CRT_FILE /certs/fullchain.pem
+# ENV SSL_KEY_FILE /certs/privkey.pem
+# ENV PORT 443
+# EXPOSE 443
 
 # Expose the port on which the app will be running (3000 is the default that `serve` uses)
-# ENV PORT 80
-# EXPOSE 80
+ENV PORT 80
+EXPOSE 80
 
 # Start the app
 CMD [ "npx", "serve", "build" ]
