@@ -3,8 +3,8 @@ FROM node:16-alpine
 WORKDIR /app
 # Copy app files
 COPY . .
-COPY /home/pi/certs/fullchain.pem /cert
-COPY /home/pi/certs/privkey.pem /cert
+COPY /home/pi/certs /cert
+# COPY /home/pi/certs/privkey.pem /cert
 # ==== BUILD =====
 # Install dependencies (npm ci makes sure the exact versions in the lockfile gets installed)
 RUN npm ci
