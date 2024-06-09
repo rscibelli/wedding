@@ -3,7 +3,7 @@ FROM node:16-alpine
 WORKDIR /app
 # Copy app files
 COPY . .
-COPY /home/pi/certs /cert
+# COPY /home/pi/certs /cert
 # COPY /home/pi/certs/privkey.pem /cert
 # ==== BUILD =====
 # Install dependencies (npm ci makes sure the exact versions in the lockfile gets installed)
@@ -16,8 +16,8 @@ ENV NODE_ENV production
 
 # For running HTTPS
 ENV HTTPS true
-ENV SSL_CRT_FILE /cert/fullchain.pem
-ENV SSL_KEY_FILE /cert/privkey.pem
+ENV SSL_CRT_FILE /certs/fullchain.pem
+ENV SSL_KEY_FILE /certs/privkey.pem
 ENV PORT 443
 EXPOSE 443
 
